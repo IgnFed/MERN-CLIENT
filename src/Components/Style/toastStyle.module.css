@@ -1,0 +1,36 @@
+.toastContainer {
+   position: absolute;
+   width: 100%;
+   margin: 0 -24px;
+}
+
+
+.toastContainer  > div{
+   position: relative;
+   border-radius: 12px;
+   padding: 30px 0;
+   text-align: center;
+   transition: opacity 1s;
+
+}
+
+.toastContainer div > p{
+   font-size: 20px;
+   color: #615555fe;
+}
+
+.close{
+   background-color: red;
+}
+
+.toastContainer .success{
+   background-color: #7fffc3;
+   opacity: 1;
+
+}
+.toastContainer .danger{
+   background-color: #ff7f9b;
+}
+.toastContainer .edit{
+   background-color: #87befc;
+}

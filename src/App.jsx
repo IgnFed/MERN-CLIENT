@@ -22,7 +22,7 @@ export const App = () => {
 
       console.log(task)
 
-      fetch('http://localhost:3301/api/tasks/',{
+      fetch('https://nodejs-mongodb-for-react.herokuapp.com/api/tasks/',{
          method: 'POST',
          body: JSON.stringify(task),
          headers: {
@@ -61,7 +61,7 @@ export const App = () => {
 
    const getData = ()=>{
 
-      fetch('http://localhost:3301/api/tasks/')
+      fetch('https://nodejs-mongodb-for-react.herokuapp.com/api/tasks/')
          .then(res => res.json())
          .then(items =>{
             setData(items)
@@ -88,7 +88,7 @@ export const App = () => {
       console.log(idElement)
       const task = {title, description}
       console.log(task)
-      fetch(`http://localhost:3301/api/tasks/${idElement}`, { method: 'PUT' , headers:{
+      fetch(`https://nodejs-mongodb-for-react.herokuapp.com/api/tasks/${idElement}`, { method: 'PUT' , headers:{
 
          'Accept': 'aplication/json',
          'Content-type': 'application/json',
@@ -109,7 +109,7 @@ export const App = () => {
 
    const deleteOneData = (e,id)=>{
       e.preventDefault()
-      fetch(`http://localhost:3301/api/tasks/${id}`, {method:'DELETE'})
+      fetch(`https://nodejs-mongodb-for-react.herokuapp.com/api/tasks/${id}`, {method:'DELETE'})
          .then(() =>{ 
          
             getData()
@@ -126,7 +126,7 @@ export const App = () => {
 
       data.length > 0 ? 
       (
-            fetch('http://localhost:3301/api/tasks/', { method: 'DELETE' })
+            fetch('https://nodejs-mongodb-for-react.herokuapp.com/api/tasks/', { method: 'DELETE' })
                .then(message => {
                   console.log(message)
                   setTitle('');

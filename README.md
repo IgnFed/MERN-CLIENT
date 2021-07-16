@@ -2,6 +2,6 @@
 
 <h1>This has been deployed with NETLIFY</h1>
 
-<h2>https://app.netlify.com/teams/ignaciofedorenco2317/overview</h2>
+<h2>https://mern-practice.netlify.app/</h2>
 
 

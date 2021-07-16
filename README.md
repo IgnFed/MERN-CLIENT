@@ -2,6 +2,6 @@
 
 <h1>This has been deployed with NETLIFY</h1>
 
-<h2>https://mern-practice.netlify.app/</h2>
+<a href="https://mern-practice.netlify.app/" target = __blank>NETLIFY MERN APP</a>
 
 
